@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js"
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
+    "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
@@ -16,6 +17,9 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
     "lerna": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0",
     "webpack": "^5.45.1"
   }
 }

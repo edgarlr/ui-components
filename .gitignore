@@ -231,5 +231,10 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
+# others
+.log
+.jest-*
+lib
+
 # End of https://www.toptal.com/developers/gitignore/api/node,react,macos,windows,linux,storybookjs,yarn,now
 {"mode":"full","isActive":false}
