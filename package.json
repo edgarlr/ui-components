@@ -8,7 +8,9 @@
     "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "storybook:start": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook",
+    "test:coverage": "jest --coverage",
+    "test:run": "jest"  
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
@@ -19,9 +21,13 @@
     "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-links": "^6.3.4",
     "@storybook/react": "^6.3.4",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
     "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
+    "jest": "^27.0.6",
     "lerna": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
