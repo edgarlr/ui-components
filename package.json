@@ -13,7 +13,10 @@
     "storybook:build": "build-storybook",
     "test": "jest",
     "test:watch": "jest --watch --no-coverage",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "lint": "eslint '**/*.{ts,tsx,js}' --quiet --cache",
+    "lint:ci": "eslint '**/*.{ts,tsx,js}' --quiet",
+    "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
@@ -39,6 +42,7 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
     "eslint": "^7.32.0",
+    "eslint-plugin-jest-dom": "^3.9.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
