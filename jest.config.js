@@ -1,23 +1,20 @@
 module.exports = {
-  preset: "ts-jest",
-  testEnvironment: "jsdom",
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   cacheDirectory: '.jest-cache',
   moduleFileExtensions: ['ts', 'tsx', 'js'],
-  modulePathIgnorePatterns: [
-    "<rootDir>/website/.cache",
-    "<rootDir>/examples",
-  ],
+  modulePathIgnorePatterns: ['<rootDir>/website/.cache', '<rootDir>/examples'],
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest/dist',
   },
-  transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
+  transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
   globals: {
     'ts-jest': {
       extends: './babel.config.js',
-      tsconfig: "tsconfig.json"
+      tsconfig: 'tsconfig.json',
     },
   },
-  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   coverageDirectory: '.jest-coverage',
   coveragePathIgnorePatterns: ['<rootDir>/packages/(?:.+?)/lib/'],
   coverageReporters: ['html', 'text'],
@@ -26,8 +23,7 @@ module.exports = {
       branches: 100,
       functions: 100,
       lines: 100,
-      statements: 100
-    }
+      statements: 100,
+    },
   },
-  
-};
+}
